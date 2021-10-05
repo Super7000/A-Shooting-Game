@@ -1,0 +1,84 @@
+body
+{
+	min-height: 97.5vh;
+	margin: 0;
+	padding: 0;
+}
+.vertical_bar
+{
+	height: 100%;
+	width: 1px;
+	background: red;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	z-index: 2;
+	transform: translate(-50%,0);
+}
+.horizontal_bar
+{
+	height: 1px;
+	width: 100%;
+	background: red;
+	position: absolute;
+	left: 0%;
+	top: 50%;
+	z-index: 2;
+	transform: translate(0%,-50%);
+}
+.point,.reset
+{
+	width: 80px;
+	height: 40px;
+	background: #fff;
+	font-family: verdana;
+	font-size: 22px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 3;
+}
+.point
+{
+	top: 10px;
+	left: 10px;
+}
+.reset
+{
+	right: 10px;
+	top: 10px;
+	color: #fff;
+	background: dodgerblue;
+	padding: 2px 5px;
+	cursor: pointer;
+	border: none;
+}
+.target
+{
+	width: 40px;
+	height: 40px;
+	background: dodgerblue;
+	position: absolute;
+	left: 0;
+	top: 10%;
+	transition: 0.3s;
+	border-radius: 50%;
+	z-index: 3;
+}
+.circle
+{
+	width: 200px;
+	height: 200px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border: 2px solid red;
+	box-shadow: 0 0 1px 10px grey;
+	cursor: none;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
